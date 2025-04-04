@@ -96,7 +96,7 @@ abstract class FileAppender extends Command {
      * @param  \Symfony\Component\Console\Output\OutputInterface  $output
      * @return mixed
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output):int
     {
         $this->initCommonNames($this->argument('table_name'), $this->option('model-name'), $this->option('controller-name'), $this->option('model-with-full-namespace'));
 
