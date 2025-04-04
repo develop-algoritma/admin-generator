@@ -150,7 +150,7 @@ abstract class ClassGenerator extends Command {
      * @param  \Symfony\Component\Console\Output\OutputInterface  $output
      * @return mixed
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output):int
     {
         if ($this instanceof Model) {
             $this->initCommonNames($this->argument('table_name'), $this->argument('class_name'), null, $this->option('model-with-full-namespace'));
